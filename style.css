@@ -1,0 +1,551 @@
+/** Body **/
+
+body {
+    background-color: #15181d;
+}
+
+/** Header **/
+
+.header {
+    position: fixed;
+    background-color: #343A40;
+    z-index: 20;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: auto;
+}
+
+/** Header - logo **/
+
+.logo {
+    margin-right: 30px;
+}
+
+.logo-reduced {
+    max-width: 40px;
+    margin-right: 0px;
+    display: none;
+}
+
+.logo-full {
+    max-width: 150px;
+    margin-right: 0px;
+}
+
+/** Header - Toggler Menu **/
+
+.navbar-toggler {
+    border-color: gainsboro !important;
+    color: gainsboro !important;
+}
+
+.navbar-toggler-icon {
+    color: gainsboro !important;
+}
+
+.menu nav{
+    align-items: center;
+}
+
+/** Header - Itens Menu **/
+
+.menuItens > .nav-link {
+    color: whitesmoke ;
+}
+
+.menuItens > .nav-link:hover {
+    color: #E35F21 ;
+}
+
+/** Header - Barra de pesquisa **/
+
+.search-bar {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.searchIcon {
+    background-color: #343A40;
+    color: gainsboro;
+    border-color: gainsboro;
+}
+
+.searchIcon:hover {
+    color: #E35F21;
+    border-color: gainsboro;
+}
+
+.searchInput {
+    background-color: #343A40 !important;
+    border-color: gainsboro;
+    color: gainsboro !important;
+}
+
+.searchInput:focus {
+    border-color: gainsboro!important;
+    box-shadow: 0 0 0 0.15rem rgba(227,95,21,.4);
+}
+
+.searchIcon:focus {
+    color: #E35F21;
+    border-color: gainsboro;
+    box-shadow: 0 0 0 0.15rem rgba(227,95,21,.4);
+}
+
+/** Main **/
+
+main {
+    margin-top: 100px;
+}
+
+.bold {
+    font-weight: bold;
+    color: #E35F21;
+}
+
+/** Títulos **/
+
+.content-header {
+    color: #E35F21;
+    padding: 8px 0 8px 0;
+}
+
+.header-lancamentos{
+    text-align: center;
+}
+
+.header-em-destaque{
+    text-align: left;
+    padding-left: 24px;
+}
+
+/** Lançamentos **/
+
+.lancamentos {
+    background-color: #2b3033;
+    margin-bottom: 24px;
+}
+
+.lancamentos-head {
+    margin-bottom: 0px;
+}
+
+
+.select-category {
+    background-color: #2b3033 !important;
+    border-color: gainsboro;
+    color: gainsboro !important;
+}
+
+
+.select-category:focus {
+    border-color: gainsboro!important;
+    box-shadow: 0 0 0 0.15rem rgba(227,95,21,.4);
+}
+
+/**Lançamentos - Carrossel**/
+
+.carousel-inner {
+    padding-bottom: 40px;
+}
+
+.carousel-indicators>li.active {
+    background-color: #E35F21
+}
+
+.carousel-control:hover {
+    color: rgba(227,95,21,.75);
+}
+
+.carousel-video {
+    padding-bottom: 56.25%;
+}
+
+/** Lançamentos - Texto **/
+
+.lancamento-titulo {
+    color: #E35F21;
+}
+
+.lancamento-texto {
+    margin-left: 8px;
+}
+
+.carousel-text {
+    padding: 2%;
+    color: gainsboro;
+    text-align: justify;
+}
+
+.lancamento-avaliacoes > i {
+    margin: 0 2px;
+}
+
+/** video-player **/
+
+.video-player {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 96%;
+    height: 96%;
+}
+
+/** Em destaque **/
+
+.em-destaque-menu {
+    padding-bottom: 12px;
+}
+
+.banners {
+    margin-bottom: 10px;
+}
+
+/** Em destaque - Select **/
+
+.select-category > option:first-child {
+    color: gray;
+}
+
+.select-category > option:checked {
+    color: #E35F21;
+}
+
+.select-category-area {
+    color: #E35F21;
+}
+
+/** Em destaque - Banner **/
+
+.banner {
+    padding-bottom: 178.75%;
+}
+
+.banner-img {
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    width: 92%;
+    height: 92%;
+    border: 1.5px solid gainsboro;
+}
+
+/** Em destaque - Botão **/
+
+.load-more {
+    text-align: end;
+}
+
+.btn-load-more {
+    color: #E35F21;
+    border-color: #E35F21;
+    margin-right: 12px;
+}
+
+.btn-load-more:hover {
+    color: gainsboro;
+    background-color: #E35F21;
+}
+
+.btn-load-more:focus {
+    box-shadow: 0 0 0 0.15rem rgba(227,95,21,.4);
+}
+
+/** Avaliaçoes **/
+
+.avaliacoes {
+    margin-bottom: 24px;
+}
+
+.avaliacoes-head {
+    margin-top: 12px;
+    padding-bottom: 12px;
+}
+
+.avaliacao-foto {
+    max-width: 100px;
+    max-height: 100px;
+    align-content: center;
+}
+
+.avaliacao-foto-img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.avaliacao-text {
+    color: gainsboro;
+    text-align: justify;
+}
+
+.avaliacao-nota > i{
+    margin: 0 2px;
+}
+
+.avaliacao-nome {
+    color: #E35F21;
+    text-align: center;
+}
+
+.avaliacao-data {
+    float: right;
+}
+
+/** Entrevista **/
+
+.entrevista {
+    color: gainsboro;
+    margin-bottom: 12px;
+}
+
+.entrevistas-head {
+    padding: 24px 80px 12px;
+    padding-top: 24px;
+    padding-bottom: 12px;
+}
+
+.entrevistas {
+    background-color: #2b3033;
+}
+
+.entrevistas-body {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+}
+
+.entrevistas .load-more {
+    margin-top: 6px;
+}
+
+.entrevistas .load-more > button {
+    margin-right: 48px;
+}
+
+.entrevista-video-container {
+    padding-bottom: 56.25%;
+    margin-bottom: 6px;
+}
+
+.entrevista-video-container > .video-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.entrevista-info {
+    padding: 0 4px;
+}
+
+.entrevista-texto {
+    margin-bottom: 4px;
+}
+
+.entrevista-estreia {
+    float: right;
+    text-align: end;
+}
+
+.movie-info {
+    padding: 0 8px;
+}
+
+/** Noticias **/
+
+.news-about {
+    margin-bottom: 24px;
+}
+
+.news-area {
+    color: gainsboro;
+    margin-bottom: 32px;
+}
+
+.news-picture > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+}
+
+.newslink {
+    color: #E35F21;
+}
+
+.newslink:link {
+    text-decoration: none;
+}
+
+.newslink:visited {
+    color: #bb4411
+}
+
+.newslink:hover {
+    color: #ff5515
+}
+
+.tag {
+    display: inline-block;
+    margin-right: 4px;
+    background-color: #E35F21;
+    padding: 2px 16px;
+    border-radius: 32px;
+}
+
+.about-text {
+    color: gainsboro;
+}
+
+.edit-head > h3 {
+    margin-bottom: 0;
+}
+
+.editorial {
+    color: gainsboro;
+}
+
+.editorial > li {
+    line-height: 2.5em;
+    padding-top: 6px;
+    margin: auto;    
+}
+
+.editorial > li > .fa-li {
+    color: #E35F21;
+    font-size: 2em;
+}
+
+
+
+/** Footer **/
+
+.footer {
+    background-color: #343A40;
+    padding: 16px 0px;
+    justify-content: center;
+}
+
+.container-footer .logo {
+    margin-right: 0px;
+    text-align: center;
+    padding: 0;
+}
+
+.footer p {
+    color: gainsboro;
+    text-align: center;
+    margin: auto;
+}
+
+.logo-footer {
+    margin: auto;
+    max-width: 80px;
+}
+
+.footer-text {
+    justify-content: center;
+    vertical-align: middle;
+    line-height: 2em;
+}
+
+
+/** Ajustes no header para evitar quebra de linha **/
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .logo-full {
+        display: none;
+    }
+    .logo-reduced {
+        display: inline;
+    }
+    .search-bar {
+        max-width: 180px;
+    }
+}
+
+@media screen and (((min-width:320px) and (max-width:991px)) or (min-width:1200px)) {
+    
+    .logo-full {
+        display: inline;
+    }
+
+    .logo-reduced {
+        display: none;
+    }
+
+    .search-bar {
+        max-width: 250px;
+    }
+}
+
+/** Ajustes para dispositivos grandes  **/
+@media screen and (max-width:991px) {
+    .banner-area:nth-child(1n+3) {
+        display: none;
+    }
+    .btn-load-more {
+        font-size: 1.2em;
+    }
+    .avaliacao-area:nth-child(3) {
+        display: none;
+    }
+    .entrevista-column:nth-child(3) {
+        display: none;
+    }
+}
+
+/** Ajustes para dispositivos médios e menores **/
+@media screen and (max-width:767px) {
+    .carousel-control {
+        display: none;
+    }
+    .category-selection {
+        padding: 0 32px;
+    }
+    .header-em-destaque {
+        padding-bottom: 8px;
+    }
+    .load-more {
+        text-align: center;
+    }
+    .btn-load-more {
+        margin: 0;
+    }
+    .banner-area:nth-child(1n+2) {
+        display: none;
+    }
+    .avaliacao-area:nth-child(1n+2) {
+        display: none;
+    }
+    .entrevista-column:nth-child(1n+2) {
+        display: none;
+    }
+}
+
+/** Ajustes para dispositivos pequenos **/
+@media screen and (max-width:540px) {
+    .footer p {
+        font-size: 0.8em;
+    }
+}
+
+/** Ajustes para dispositivos muito pequenos **/
+
+@media screen and (max-width:320px) {
+    .logo-full {
+        display: none;
+    }
+    .logo-reduced {
+        display: inline;
+    }
+    .search-bar {
+        max-width: 200px;
+    }
+    .footer p {
+        font-size: 0.6em;
+    }
+}
