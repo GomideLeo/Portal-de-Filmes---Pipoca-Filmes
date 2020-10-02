@@ -191,6 +191,7 @@ main {
     left: 2%;
     width: 96%;
     height: 96%;
+    border: 1.5px solid #bb4411;
 }
 
 /** Em destaque **/
@@ -204,6 +205,10 @@ main {
 }
 
 /** Em destaque - Select **/
+
+.select-category {
+    border-color: #bb4411;
+}
 
 .select-category > option:first-child {
     color: gray;
@@ -229,7 +234,7 @@ main {
     left: 4%;
     width: 92%;
     height: 92%;
-    border: 1.5px solid gainsboro;
+    border: 1.5px solid #bb4411;
 }
 
 /** Em destaque - Botão **/
@@ -262,6 +267,11 @@ main {
 .avaliacoes-head {
     margin-top: 12px;
     padding-bottom: 12px;
+}
+
+.header-avaliacoes {
+    padding-right: 24px;
+    padding-left: 24px;
 }
 
 .avaliacao-foto {
@@ -356,21 +366,34 @@ main {
 
 /** Noticias **/
 
+.news-text {
+    text-align: justify;
+}
+
 .news-about {
     margin-bottom: 24px;
+}
+
+.news-head {
+    padding-right: 24px;
+    padding-left: 24px;
 }
 
 .news-area {
     color: gainsboro;
     margin-bottom: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.news-picture {
+    margin-bottom: 16px;
 }
 
 .news-picture > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 75%;
+    max-width: 100%;
+    object-fit: scale-down;
+    border: 1.5px solid #bb4411;
 }
 
 .newslink {
@@ -392,6 +415,7 @@ main {
 .tag {
     display: inline-block;
     margin-right: 4px;
+    margin-bottom: 6px;
     background-color: #E35F21;
     padding: 2px 16px;
     border-radius: 32px;
@@ -399,6 +423,7 @@ main {
 
 .about-text {
     color: gainsboro;
+    text-align: justify;
 }
 
 .edit-head > h3 {
@@ -412,14 +437,48 @@ main {
 .editorial > li {
     line-height: 2.5em;
     padding-top: 6px;
-    margin: auto;    
+}
+
+.editorial > li:before {
+    content: "";
+    margin-right: -16px; 
 }
 
 .editorial > li > .fa-li {
     color: #E35F21;
     font-size: 2em;
+    width: 40px;
+    height: 40px;
+    margin-left: 12px;  
 }
 
+.social-link:link {
+    text-decoration: none;
+}
+
+.social-box {
+    height: 42px;
+    width: 42px;
+    margin: auto;
+    margin-right: 24px;
+    display: inline-block;
+    border: 1.5px solid #E35F21;
+    color: #E35F21;
+    border-radius: 40%;
+}
+
+.social-box:hover {
+    border: 1.5px solid #15181d;
+    background-color: #E35F21;
+    color: #15181d;
+    border-radius: 36%;
+}
+
+.social-box > p{
+    font-size: 32px;
+    text-align: center;
+    line-height: 36px;
+}
 
 
 /** Footer **/
@@ -473,6 +532,10 @@ main {
         display: inline;
     }
 
+    .edit-info {
+        font-size: 0.8em;
+    }
+
     .logo-reduced {
         display: none;
     }
@@ -496,6 +559,9 @@ main {
     .entrevista-column:nth-child(3) {
         display: none;
     }
+    .news-area:nth-child(4) {
+        display: none;
+    }
 }
 
 /** Ajustes para dispositivos médios e menores **/
@@ -515,6 +581,10 @@ main {
     .btn-load-more {
         margin: 0;
     }
+    .entrevistas-head {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
     .banner-area:nth-child(1n+2) {
         display: none;
     }
@@ -523,6 +593,9 @@ main {
     }
     .entrevista-column:nth-child(1n+2) {
         display: none;
+    }
+    .social-box {
+        margin-right: 16px;
     }
 }
 
@@ -547,5 +620,8 @@ main {
     }
     .footer p {
         font-size: 0.6em;
+    }
+    .social-box {
+        margin-right: 8px;
     }
 }
