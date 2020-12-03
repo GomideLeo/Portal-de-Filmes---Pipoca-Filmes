@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/PipocaLogo.png">
+
+    <script></script>
 </head>
 
 <body>
@@ -29,19 +31,20 @@
                 <div class="collapse navbar-collapse menu" id="navbarToggler">
                     <nav class="navbar-nav menuItens">
                         <a class="nav-link" href="#lancamentos">Lançamentos</a>
-                        <a class="nav-link" href="#emDestaque">Em destaque</a>
-                        <a class="nav-link" href="#avaliacoes">Avaliações</a>
-                        <a class="nav-link" href="#entrevistas">Entrevistas & Making Of</a>
-                        <a class="nav-link" href="#novidades">Novidades</a>
+                        <a class="nav-link" href="#categories">Categorias</a>
+                        <a class="nav-link" href="#cinema">No Cinema</a>
+                        <a class="nav-link" href="#discover">Descubra</a>
                     </nav>
-                    <div class="input-group search-bar mt-3 mb-3">
-                        <div class="input-group-prepend searchIcon">
-                            <button class="btn btn-outline-secondary searchIcon" type="button"><i class="fa fa-search"
-                                    aria-hidden="true"></i></button>
+                    <form id="searchBar" class="mt-3 mb-3 search-bar" method="get" action="./search/">
+                        <div class="input-group">
+                            <div class="input-group-prepend searchIcon">
+                                <button class="btn btn-outline-secondary searchIcon" type="submit" ><i
+                                        class="fa fa-search" aria-hidden="true"></i></button>
+                            </div>
+                            <input type="text" class="form-control searchInput" placeholder="Pesquisar filme"
+                                aria-describedby="basic-addon1" id="query" name="query">
                         </div>
-                        <input type="text" class="form-control searchInput" placeholder="Pesquisar filme"
-                            aria-describedby="basic-addon1">
-                    </div>
+                    </form>
                 </div>
             </nav>
         </div>
@@ -58,121 +61,31 @@
         <section class="lancamentos row">
             <div class="col-12 carousel-lancamentos">
                 <div id="newsCarousel" class="carousel slide" data-ride="carousel" pause="hover" keyboard="false">
-                    <ol class="carousel-indicators">
+                    <ol id="spotlightIndicator" class="carousel-indicators">
                         <li data-target="#newsCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#newsCarousel" data-slide-to="1"></li>
-                        <li data-target="#newsCarousel" data-slide-to="2"></li>
                     </ol>
-                    <div class="carousel-inner">
+                    <div class="carousel-inner" id="spotlightCarrousel">
+
+
                         <div class="carousel-item container active">
                             <div class="row carousel-content">
-                                <div class="col-12 col-lg-8 carousel-video">
-                                    <iframe src="https://www.youtube.com/embed/3f_REapPwio" class="video-player"
-                                        frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
+                                <a href="" class="movie-link"></a>
+                                <div class="col-12 col-lg-8 carousel-image picture-container">
+                                    <img src="" class="image-item">
                                 </div>
                                 <div class="col-12 col-lg-4 carousel-text">
-                                    <h2 class="lancamento-titulo">Away</h2>
+                                    <a href="" class="movie-link">
+                                        <h2 class="lancamento-titulo"></h2>
+                                    </a>
                                     <p class="lancamento-texto lancamento-sinopse"><span class="bold"> Sinopse:
-                                        </span>Away segue a história "Emma Green, uma astronauta americana que deve
-                                        deixar seu marido e filha adolescente para comandar
-                                        uma tripulação espacial internacional que embarca em uma missão traiçoeira
-                                        de três anos. É uma série sobre esperança,
-                                        humanidade e como, em última análise, precisamos de um ao outro se quisermos
-                                        alcançar coisas impossíveis.</p>
-                                    <p class="lancamento-texto lancamento-direcao"><span class="bold"> Direção:
-                                        </span>Andrew Hinderaker</p>
-                                    <p class="lancamento-texto lancamento-roteiro"><span class="bold"> Roteiro:
-                                        </span>Angela Catanzaro | Phillip J. McLaughlin | Peter Forslund | Dana
-                                        Gasparine</p>
-                                    <p class="lancamento-texto lancamento-elenco"><span class="bold"> Elenco:
-                                        </span>Hilary Swank | Josh Charles | Vivian Wu | Mark Ivanir | Ato Essandoh
-                                        | Ray Panthaki | Talitha Bateman</p>
+                                        </span><span class="overview"></span></p>
+                                    <p class="lancamento-texto lancamento-data"><span class="bold">
+                                            Lançamento: </span><span class="date"></span></p>
                                     <p class="lancamento-texto lancamento-avaliacoes"><span class="bold">
-                                            Avaliações: </span><i class="fa fa-star" aria-hidden="true"></i><i
-                                            class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
-                                            aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-                                            class="fa fa-star" aria-hidden="true"></i></p>
+                                            Avaliações: </span><span class="stars"></span></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item container">
-                            <div class="row carousel-content">
-                                <div class="col-12 col-lg-8 carousel-video">
-                                    <iframe src="https://www.youtube.com/embed/1d0Zf9sXlHk" class="video-player"
-                                        frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                </div>
-                                <div class="col-12 col-lg-4 carousel-text">
-                                    <h2 class="lancamento-titulo">Enola Holmes</h2>
-                                    <p class="lancamento-texto lancamento-sinopse"><span class="bold"> Sinopse:
-                                        </span>Quando sua mãe desaparece em seu aniversário de 16 anos, Enola
-                                        procura a ajuda de seus irmãos mais velhos. Mas assim que
-                                        ela percebe que eles estão menos interessados em resolver o caso do que
-                                        mandá-la para o internato, Enola faz a única
-                                        coisa que uma garota esperta, cheia de recursos e destemida em 1880 faria.
-                                        Ela foge para Londres para encontrá-la.
-                                        Encontrando diversos personagens memoráveis pelo caminho, Enola se acha no
-                                        meio de uma conspiração que pode alterar o
-                                        rumo da história política.</p>
-                                    <p class="lancamento-texto lancamento-direcao"><span class="bold"> Direção:
-                                        </span>Harry Bradbeer</p>
-                                    <p class="lancamento-texto lancamento-roteiro"><span class="bold"> Roteiro:
-                                        </span>Jack Thorne</p>
-                                    <p class="lancamento-texto lancamento-elenco"><span class="bold"> Elenco:
-                                        </span>Millie Bobby Brown | Sam Claflin | Henry Cavill | Helena Bonham
-                                        Carter | Louis Patridge</p>
-                                    <p class="lancamento-texto lancamento-avaliacoes"><span class="bold">
-                                            Avaliações: </span><i class="fa fa-star" aria-hidden="true"></i><i
-                                            class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
-                                            aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-                                            class="fa fa-star-o" aria-hidden="true"></i></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item container">
-                            <div class="row carousel-content">
-                                <div class="col-12 col-lg-8 carousel-video">
-                                    <iframe src="https://www.youtube.com/embed/1k8AYAWBFS4" class="video-player"
-                                        frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                </div>
-                                <div class="col-12 col-lg-4 carousel-text">
-                                    <h2 class="lancamento-titulo">The Eternals</h2>
-                                    <p class="lancamento-texto lancamento-sinopse"><span class="bold"> Sinopse:
-                                        </span>Os Eternos do Marvel
-                                        Studios apresenta uma
-                                        outra
-                                        equipe de super-heróis no MCU; aliens ancestrais que vivem na Terra em
-                                        segredo por milhares de anos. Seguindo os eventos de Vingadores: Ultimato,
-                                        uma
-                                        tragédia inesperada os força a sair das
-                                        sombras para se reunirem contra os mais antigos inimigos da humanidade, Os
-                                        Deviantes.</p>
-                                    <p class="lancamento-texto lancamento-direcao"><span class="bold"> Direção:
-                                        </span>Chloé Zhao</p>
-                                    <p class="lancamento-texto lancamento-roteiro"><span class="bold"> Roteiro:
-                                        </span>Matthew K. Firpo & Ryan
-                                        Firpo</p>
-                                    <p class="lancamento-texto lancamento-elenco"><span class="bold"> Elenco:
-                                        </span>Angelina Jolie | Salma
-                                        Hayek | Richard Madden |
-                                        Kumail Nanjiani | Lauren Ridloff | Brian Tyree Henry | Lia McHugh | Don Lee
-                                        |
-                                        Barry
-                                        Keoghan | Gemma Chan | Kit Harington</p>
-                                    <p class="lancamento-texto lancamento-avaliacoes"><span class="bold">
-                                            Avaliações: </span><i class="fa fa-star" aria-hidden="true"></i><i
-                                            class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
-                                            aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i
-                                            class="fa fa-star-o" aria-hidden="true"></i></p>
-                                </div>
-                            </div>
-                        </div>
-
                         <a class="carousel-control carousel-control-prev" href="#newsCarousel" role="button"
                             data-slide="prev">
                             <i class="fa fa-chevron-left" aria-hidden="true"></i>
@@ -183,315 +96,167 @@
                             <i class="fa fa-chevron-right" aria-hidden="true"></i>
                             <span class="sr-only">Next</span>
                         </a>
+
                     </div>
                 </div>
         </section>
 
-        <section class="em-destaque-menu row">
+
+        <section id="categories" class="em-destaque-menu row">
             <div class="col-12 col-md-8 content-header header-em-destaque">
-                <h2>Em destaque</h2>
+                <h2>Categorias</h2>
             </div>
             <div class="col-12 col-md-4 selection-box category-selection">
-                <div class="select-outline select-category-area">
+                <div class="select-outline select-box-area">
                     <label for="categorySelect">Categoria: </label>
-                    <select id="categorySelect" class="form-control select-category">
-                        <option value="all" selected>Todos</option>
-                        <option value="action">Ação</option>
-                        <option value="adventure">Aventura</option>
-                        <option value="comedy">Comédia</option>
-                        <option value="drama">Drama</option>
-                        <option value="romantic">Romance</option>
+                    <select id="categorySelect" class="form-control select-box select-category"
+                        onchange="getMoviesByCategories(this.value, fillCategoriesMovies)">
+                        <option value="0">Todos</option>
                     </select>
                 </div>
             </div>
         </section>
-
-        <section id="emDestaque" class="em-destaque-banners">
+        <section class="categories-section">
             <div class="banners row">
-                <div class="col-12 col-md-6 col-lg-3 banner-area">
-                    <div class="banner">
-                        <a href=""><img class="banner-img" src="imagens/DivertidamenteBanner.jpg"
-                                alt="bannerDivertidamente"></a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 banner-area">
-                    <div class="banner">
-                        <a href=""><img class="banner-img" src="imagens/WitcherBanner.jpg" alt="bannerWitcher"></a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 banner-area">
-                    <div class="banner">
-                        <a href=""><img class="banner-img" src="imagens/BobEsponjaBanner.jpg"
-                                alt="bannerBobEsponja"></a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 banner-area">
-                    <div class="banner">
-                        <a href=""><img class="banner-img" src="imagens/SrAneisBanner.jpg" alt="bannerSrAneis"></a>
+                <div  class="col-12 categories-area container">
+                    <div id="categoriesArea" class="row container">
+                        <div class="categories-item col-12 col-md-6 row">
+                            <div class="col-12 col-md-6 col-lg-5 categories-picture picture-container">
+                                <a href="" class="movie-link"><img src="" class="image-item"></a>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-7 categories-content">
+                                <a class="movie-link" href="">
+                                    <div class="categories-title">
+                                        <h4 class="movie-title"><span class="titulo"></span></h4>
+                                    </div>
+                                </a>
+                                <div class="categories-text row">
+                                    <div class="movie-info col-12">
+                    
+                                        <div class="categories-info">
+                                            <p class="categories-texto"><span class="bold"> Linguagem original:
+                                                </span><span class="language"></span></p>
+                                            <p class="categories-texto"><span class="bold"> Estreia:
+                                                </span><span class="date"></span></p>
+                                            <p class="categories-texto categories-avaliacoes"><span class="bold">
+                                                    Avaliações: </span><span class="stars"></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-tags">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="load-more">
-                <button type="button" class="btn btn-outline btn-load-more btn-load-more-movies"><i class="fa fa-plus"
+                <button type="button" class="btn btn-outline btn-load-more btn-load-more-movies" id="catButt" onclick="loadMoreCatItems()"><i class="fa fa-plus"
                         aria-hidden="true"></i> Carregar mais filmes</button>
             </div>
         </section>
 
 
-        <section id="avaliacoes" class="avaliacoes content-head avaliacoes-head row">
-            <div class="col-12 content-header header-avaliacoes">
-                <h2>Últimas avaliações</h2>
+        <section id="cinema" class="now-playing now-playing-head row">
+            <div class="col-12 content-header header-filtro">
+                <h2>No Cinema</h2>
             </div>
         </section>
-        <section class="avaliacoes">
-            <div class="ultimas-avaliacoes row">
-                <div class="col-12 col-md-6 col-lg-4 avaliacao-area container">
-                    <div class="avaliacao row">
-                        <div class="avaliacao-foto col-3">
-                            <img class="avaliacao-foto-img" src="imagens/avatar/avatarFemale2.svg" alt="foto">
-                        </div>
-                        <div class="avaliacao-text col-9">
-                            <h3 class="avaliacao-nome">Tatiana Nairn</h3>
-                            <p class="avaliacao-texto avaliacao-avaliacao"><span class="bold"> Avaliacão:
-                                </span>Amei. Um filme leve, muito gostoso e intrigante de assistir. As atuações são
-                                muito boas, amei os personagens da Millie
-                                Bobby Brown e do Louis Patridge.</p>
-                            <p class="avaliacao-texto avaliacao-nota"><span
-                                    class="bold avaliacao-data">26/09/2020</span><i class="fa fa-star"
-                                    aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-                                    class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
-                                    aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 avaliacao-area container">
-                    <div class="avaliacao row">
-                        <div class="avaliacao-foto col-3">
-                            <img class="avaliacao-foto-img" src="imagens/avatar/avatarFemale1.svg" alt="foto">
-                        </div>
-                        <div class="avaliacao-text col-9">
-                            <h3 class="avaliacao-nome">Isis Reese</h3>
-                            <p class="avaliacao-texto avaliacao-avaliacao"><span class="bold"> Avaliacão:
-                                </span>Simplesmente perfeito! Adoro a trilogia, e indico o filme a todos. É um filme com
-                                excelente historia e efeitos, sem
-                                falar do elenco!</p>
-                            <p class="avaliacao-texto avaliacao-nota"><span
-                                    class="bold avaliacao-data">26/09/2020</span><i class="fa fa-star"
-                                    aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-                                    class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
-                                    aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+        <section class="playing now-playing-body row">
+            <div class="now-playing col-12">
+                <div class="now-playing-area container">
+                    <div id="nowPlaying" class="order-row row">
+                        <div class="now-playing-item col-12 col-md-6">
+        
+                            <div class="now-playing-img-container col-12 picture-container">
+                                <a href="" class="movie-link"><img src="" class="image-item"></a>
+                            </div>
+        
+                            <div class="movie-info col-12">
+                                <a href="" class="movie-link">
+                                    <h4 class="movie-title"><span class="titulo"></span></h4>
+                                </a>
+                                <div class="now-playing-info">
+                                    <p class="now-playing-texto"><span class="bold"> Linguagem original:
+                                        </span><span class="language"></span></p>
+                                    <p class="now-playing-texto"><span class="bold"> Estreia:
+                                        </span><span class="date"></span></p>
+                                    <p class="now-playing-texto now-playing-avaliacoes"><span class="bold">
+                                            Avaliações: </span><span class="stars"></span></p>
+                                </div>
+                            </div>
+                            <div class="order-tags">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 avaliacao-area container">
-                    <div class="avaliacao row">
-                        <div class="avaliacao-foto col-3">
-                            <img class="avaliacao-foto-img" src="imagens/avatar/avatarMale1.svg" alt="foto">
-                        </div>
-                        <div class="avaliacao-text col-9">
-                            <h3 class="avaliacao-nome">Maison Cooper</h3>
-                            <p class="avaliacao-texto avaliacao-avaliacao"><span class="bold"> Avaliacão:
-                                </span>O filme no geral é bom! Apesar de perturbador e brutal, apresenta um elenco de
-                                peso e uma crítica social bem bolada!
-                                Achei um pouco exagerado e repetitivo.</p>
-                            <p class="avaliacao-texto avaliacao-nota"><span
-                                    class="bold avaliacao-data">26/09/2020</span><i class="fa fa-star"
-                                    aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-                                    class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o"
-                                    aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></p>
-                        </div>
-                    </div>
+                <div class="load-more col-12">
+                    <button id="nowPlayingButt" type="button" class="btn btn-outline btn-load-more btn-load-more-movies"
+                        onclick="loadNowPlayingItems()"><i class="fa fa-plus" aria-hidden="true"></i>
+                        Carregar mais filmes</button>
                 </div>
-            </div>
-            <div class="load-more">
-                <button type="button" class="btn btn-outline btn-load-more btn-load-more-reviews"><i class="fa fa-plus"
-                        aria-hidden="true"></i>
-                    Carregar mais avaliações</button>
             </div>
         </section>
 
-        <section id="entrevistas" class="entrevistas entrevistas-head row">
-            <div class="col-12 content-header header-entrevistas">
-                <h2>Entrevistas & Making of</h2>
-            </div>
-        </section>
-        <section class="entrevistas entrevistas-body row">
-            <div class="entrevistas-making-of col-12">
-                <div class="entrevistas-area container">
-                    <div class="entrevista row">
-                        <div class="entrevista-column col-12 col-md-6 col-lg-4">
-                            <div class="entrevista-video-container col-12">
-                                <iframe src="https://www.youtube.com/embed/xQvuDsBvkHE" class="video-player"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
-                            <div class="movie-info col-12">
-                                <h4 class="movie-title"><span class="bold"> Filme: </span>The Witcher</h4>
-                                <div class="entrevista-info">
-                                    <p class="entrevista-texto lancamento-direcao"><span class="bold"> Direção:
-                                        </span>Lauren Schmidt Hissrich</p>
-                                    <p class="entrevista-texto"><span class="entrevista-roteiro"><span class="bold">
-                                                Roteiro:
-                                            </span>Nick Arthurs</span>
-                                        <span class="entrevista-estreia"><span class="bold"> Estreia:
-                                            </span>2019</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="entrevista-column col-12 col-md-6 col-lg-4">
-                            <div class="entrevista-video-container col-12">
-                                <iframe src="https://www.youtube.com/embed/JIdV7AWd3ns" class="video-player"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
-                            <div class="movie-info col-12">
-                                <h4 class="movie-title"><span class="bold"> Filme: </span>Duna</h4>
-                                <div class="entrevista-info">
-                                    <p class="entrevista-texto lancamento-direcao"><span class="bold"> Direção:
-                                        </span>Denis Villeneuve</p>
-                                    <p class="entrevista-texto"><span class="entrevista-roteiro"><span class="bold">
-                                                Roteiro:
-                                            </span>Eric Roth</span>
-                                        <span class="entrevista-estreia"><span class="bold"> Estreia:
-                                            </span>2020</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="entrevista-column col-12 col-md-6 col-lg-4">
-                            <div class="entrevista-video-container col-12">
-                                <iframe src="https://www.youtube.com/embed/6PjYlCyxxHI" class="video-player"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                            </div>
-                            <div class="movie-info col-12">
-                                <h4 class="movie-title"><span class="bold"> Filme: </span>Enola Holmes</h4>
-                                <div class="entrevista-info">
-                                    <p class="entrevista-texto lancamento-direcao"><span class="bold"> Direção:
-                                        </span>Harry Bradbeer</p>
-                                    <p class="entrevista-texto"><span class="entrevista-roteiro"><span class="bold">
-                                                Roteiro:
-                                            </span>Jack Thorne</span>
-                                        <span class="entrevista-estreia"><span class="bold"> Estreia:
-                                            </span>2020</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="load-more col-12">
-                <button type="button" class="btn btn-outline btn-load-more btn-load-more-movies"><i class="fa fa-plus"
-                        aria-hidden="true"></i>
-                    Carregar mais filmes</button>
-            </div>
-        </section>
+
 
         <section class="news-about row container">
-            <section id="novidades" class="news-column col-12 col-lg-8 row">
-                <div class="col-12 content-header news-head">
-                    <h2>Novidades</h2>
-                </div>
-                <div class="col-12 news-area container">
-                    <div class="news-block row">
-                        
-                        <div class="col-12 col-md-6 col-lg-5 news-picture">
-                            <img src="imagens/Noticia1.jpg" alt="imagem-noticia">
-                        </div>
-                        
-                        <div class="col-12 col-md-6 col-lg-7 news-content">
-                            <a class="newslink" href="http://www.adorocinema.com/noticias/filmes/noticia-156183/" target="_blank">
-                            <div class="news-title">
-                                <h5>Homem-Aranha 3 pode ter retorno de Jamie Foxx como Electro</h5>
-                            </div>
-                            </a>
-                            <div class="news-text">
-                                <p>Um dos quatro filmes planejados pela Marvel para 2021, Homem-Aranha 3 promete ter uma
-                                    surpresa para os fãs do herói.
-                                    Segundo informações do portal The Hollywood Reporter, Jamie Foxx está negociando
-                                    para reprisar o papel do vilão Electro
-                                    no projeto estrelado por Tom Holland.</p>
-                            </div>
-                            <div class="news-tags">
-                                <div class="tag">
-                                    Super Heroi
-                                </div>
-                                <div class="tag">
-                                    Homem-Aranha
-                                </div>
-                                <div class="tag">
-                                    Lançamentos
-                                </div>
-                            </div>
+            <section id="discover" class="news-column col-12 col-lg-8 row">
+                <div class="col-12 content-header order-head row">
+                    <div class="col-12 col-md-8 content-header header-filtro">
+                        <h2>Descubra Filmes</h2>
+                    </div>
+                    <div class="col-12 col-md-4 selection-box filter-selection">
+                        <div class="select-outline select-box-area">
+                            <label for="filterSelect">Ordenar por: </label>
+                            <select id="filterSelect" class="form-control select-box select-filter"
+                                onchange="getFilterMovies(this.value, fillFilterMovies)">
+                                <option value="popularity.desc" selected>Popularidade</option>
+                                <option value="vote_average.desc">Nota</option>
+                                <option value="revenue.desc">Rendimento</option>
+                                <option value="release_date.asc">Mais antigos</option>
+                                <option value="release_date.desc">Mais atuais</option>
+                            </select>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 news-area container">
-                    <div class="news-block row">
-                        <div class="col-12 col-md-6 col-lg-5 news-picture">
-                            <img src="imagens/Noticia3.jpg" alt="imagem-noticia">
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-7 news-content">
-                            <a class="newslink" href="http://www.adorocinema.com/noticias/filmes/noticia-156175/" target="_blank">
-                                <div class="news-title">
-                                    <h5>Lançamentos da Netflix em filmes para outubro</h5>
-                                </div>
-                            </a>
-                            <div class="news-text">
-                                <p>A Caminho da Lua promete ser uma das animações mais bem-sucedidas do ano, e é dirigida por Glen Keane, que já trabalhou
-                                    em filmes como A Pequena Sereia e Aladdin.</p>
-                                </div>
-                                <div class="news-tags">
-                                    <div class="tag">
-                                        Lançamentos
-                                    </div>
-                                    <div class="tag">
-                                        Netflix
-                                    </div>
-                                    <div class="tag">
-                                        Séries
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 news-area container">
-                        <div class="news-block row">
-                            <div class="col-12 col-md-6 col-lg-5 news-picture">
-                                <img src="imagens/Noticia2.jpg" alt="imagem-noticia">
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-7 news-content">
-                                <a class="newslink" href="http://www.adorocinema.com/noticias/filmes/noticia-156179/" target="_blank">
-                                <div class="news-title">
-                                    <h5>Borat 2: Sacha Baron Cohen promete salvar 2020 em trailer oficial</h5>
-                                </div>
-                                </a>
-                                <div class="news-text">
-                                    <p>A sequência estreia ainda em outubro no Prime Video.
-                                        Borat 2 já é uma realidade. Na última terça-feira, as redes sociais do longa
-                                        liberaram um teaser cheio de ironias e
-                                        agora o Prime Video acaba de divulgar o trailer e título oficial de Borat: Fita de
-                                        Cinema Seguinte.</p>
-                                </div>
-                                <div class="news-tags">
-                                    <div class="tag">
-                                        Comédia
-                                    </div>
-                                    <div class="tag">
-                                        Lançamentos
-                                    </div>
-                                    <div class="tag">
-                                        Filmes
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div id="orderBy" class="col-12 news-area container">
+                    <div class="order-item row">
 
+                        <div class="col-12 col-md-6 col-lg-5 order-picture picture-container">
+                            <a href="" class="movie-link"><img src="" class="image-item"></a>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-7 order-content">
+                            <a class="movie-link" href="">
+                                <div class="order-title">
+                                    <h4 class="movie-title"><span class="titulo"></span></h4>
+                                </div>
+                            </a>
+                            <div class="order-text row">
+                                <div class="movie-info col-12">
+
+                                    <div class="order-info">
+                                        <p class="order-texto"><span class="bold"> Linguagem original:
+                                            </span><span class="language"></span></p>
+                                        <p class="order-texto"><span class="bold"> Estreia:
+                                            </span><span class="date"></span></p>
+                                        <p class="order-texto order-avaliacoes"><span class="bold">
+                                                Avaliações: </span><span class="stars"></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-tags">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="load-more col-12">
+                    <button id="orderByButt" type="button" class="btn btn-outline btn-load-more btn-load-more-movies"
+                        onclick="loadMoreOrderItems()"><i class="fa fa-plus" aria-hidden="true"></i>
+                        Carregar mais filmes</button>
+                </div>
 
             </section>
             <section class="extra-column col-12 col-lg-4 container">
@@ -501,7 +266,8 @@
                     </div>
                     <div class="about-text">
                         <p>
-                            Blog de filmes desenvolvido por Leonardo Caetano Gomide utilizando HTML e CSS para o primeiro trabalho prático da disciplina de Desenvolvimento de Interfaces Web. 
+                            Blog de filmes desenvolvido por Leonardo Caetano Gomide utilizando HTML e CSS para o
+                            primeiro trabalho prático da disciplina de Desenvolvimento de Interfaces Web.
                         </p>
                     </div>
                 </div>
@@ -528,7 +294,8 @@
                         <h4>Redes Sociais</h4>
                     </div>
                     <div class="col-12 social-icons">
-                        <a class="social-link social-github" href="https://github.com/GomideLeo/Portal-de-Filmes-Pipoca-Filmes" target="_blank">
+                        <a class="social-link social-github"
+                            href="https://github.com/GomideLeo/Portal-de-Filmes-Pipoca-Filmes" target="_blank">
                             <div class="social-box">
                                 <p><i class="fa fa-github" aria-hidden="true"></i></p>
                             </div>
@@ -538,7 +305,8 @@
                                 <p><i class="fa fa-twitter" aria-hidden="true"></i></p>
                             </div>
                         </a>
-                        <a class="social-link social-instagram" href="https://www.instagram.com/gomide_leo/" target="_blank">
+                        <a class="social-link social-instagram" href="https://www.instagram.com/gomide_leo/"
+                            target="_blank">
                             <div class="social-box">
                                 <p><i class="fa fa-instagram" aria-hidden="true"></i></p>
                             </div>
@@ -565,16 +333,19 @@
     </footer>
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js">
+    </script>
+    <script src="scripts/proxy.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/0ab778966e.js"></script>
+
+
 </body>
 
 </html>
