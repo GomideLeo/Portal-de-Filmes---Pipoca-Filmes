@@ -78,3 +78,9 @@ function searchMovies (query, callback, page = 1) {
     
     htmlGetRequest(url, callback, body)
 }
+
+function getMovie (movieId, callback) {
+    let url = "movie/" + (movieId ? movieId : "");
+
+    htmlGetRequest(url, callback)
+}

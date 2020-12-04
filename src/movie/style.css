@@ -1,0 +1,25 @@
+.result-body {
+    color: gainsboro;
+}
+
+.news-text {
+    padding-top: 12px;
+    padding-left: 16px;
+}
+
+.result-body {
+    margin-bottom: 10px;
+}
+
+.result-item {
+    margin: 24px 0;
+}
+
+.image-pic {
+    width: 100%;
+    border: 1.5px solid #bb4411;
+}
+
+.news-text {
+    padding: 24px 12px;
+}

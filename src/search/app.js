@@ -1,6 +1,6 @@
 const params = new URL(window.location).searchParams;
 const imageUrl = "https://image.tmdb.org/t/p/w500";
-const movieUrl = "https://www.themoviedb.org/movie/";
+const movieUrl = "./movie/?movie=";
 var movieCategories = [];
 
 function getSearchParam(field) {

@@ -53,37 +53,40 @@
     </header>
 
     <main class="container main">
-        <section class="results-head row">
-            <div class="result-title content-header col-12">
-                <h1>RESULTADOS</h5>
+        <section class="movie-head row">
+            <div class="movie-title content-header col-12 m-2">
+                <a href="#" id="tituloLink" class="movie-link" target="_blank">
+                    <h1 id="titulo">FILME</h1>
+                </a>
+                <h5 id="subtitle" class="ml-4">
+                    <h5>
             </div>
         </section>
-        <section id="results" class="result-body container col-12">
+        <div class="col-12 picture-container">
+            <img id="image" src="" class="image-pic">
+        </div>
+        <section id="movie" class="result-body container col-12">
             <div class="result-item row">
-
-                <div class="col-12 col-md-6 col-lg-4 result-picture picture-container">
-                    <a href="" class="movie-link"><img src="" class="image-item"></a>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-8 news-content">
-                    <a class="movie-link" href="">
-                        <div class="news-title">
-                            <h4 class="movie-title"><span class="titulo"></span></h4>
-                        </div>
-                    </a>
+                <div class="col-12 news-content">
                     <div class="news-text row">
-                        <div class="movie-info col-12">
-                            <div class="result-info">
-                                <p class="result-texto"><span class="bold"> Linguagem original:
-                                    </span><span class="language"></span></p>
+                        <div id="movieInfo" class="movie-info col-12">
+                            <div class="order-tags">
+                            </div>
+                            <div class="result-info mt-3">
                                 <p class="result-texto"><span class="bold"> Estreia:
                                     </span><span class="date"></span></p>
+                                <p class="result-texto"><span class="bold"> Sinopse:
+                                    </span><span class="overview"></span></p>
+                                <p class="result-texto"><span class="bold"> Status:
+                                    </span><span class="status"></span></p>
+                                <p class="result-texto"><span class="bold"> Orçamento:
+                                    </span><span class="budget"></span></p>
+                                <p class="result-texto"><span class="bold"> Linguagens faladas:
+                                    </span><span class="languages"></span></p>
                                 <p class="result-texto result-avaliacoes"><span class="bold">
                                         Avaliações: </span><span class="stars"></span></p>
                             </div>
                         </div>
-                    </div>
-                    <div class="order-tags">
                     </div>
                 </div>
             </div>

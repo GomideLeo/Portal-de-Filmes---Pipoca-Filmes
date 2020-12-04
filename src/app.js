@@ -1,5 +1,5 @@
 const imageUrl = "https://image.tmdb.org/t/p/w500";
-const movieUrl = "https://www.themoviedb.org/movie/";
+const movieUrl = "./movie/?movie=";
 var movieCategories = [];
 var filterItemsShown = 2;
 var categoriesItemsShown = 2;
